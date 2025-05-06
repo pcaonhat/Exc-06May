@@ -1,0 +1,49 @@
+* BigInt là gì?
+BigInt là kiểu dữ liệu giống với số nguyên, riêng có đặc điểm là cho phép làm việc với số nguyên mà không có giới hạn về độ lớn, 
+    cho phép làm việc với các dữ liệu mang giá trị lớn.
+Cách khởi tạo BigInt
+    - Cách 1: Thêm kí tự “n” vào phía sau một số nguyên.
+    - Cách 2: Sử dụng Constructor bigint với cú pháp: BigInt(<value>)
+Đặc điểm
+    - Toán tử cho kết quả giống với số thông thường, riêng phép chia thì chỉ cho kết quả với số nguyên.
+    - Phép so sánh có thể thực hiện giữa BigInt và number, nhưng toán tử số học sẽ cho ra kết quả lỗi
+    - Không nên ép kiểu BigInt qua Int vì có thể ảnh hưởng đến độ chính xác. Và chỉ nên áp dụng BigInt cho các gía trị lớn hơn 2^53 (vượt ngoài Int)
+    - Toán tử trên bit hoạt động bình thường trừ toán tử >>>
+    
+* Máy tính không lưu trữ số thực như thông thường mà dùng chuẩn và hệ nhị phân.
+Số thực thường được biểu diễn dưới hệ nhị phân theo chuẩn IEEE 754 floating-point với 3 phần chính:
+    - The sign (Dấu): 1 bit biểu thị số đó là dương hay âm, "0" cho số dương và "1" cho số âm
+    - The exponent (Mũ): 8 hoặc 11 bit biểu diễn số mũ 2 của giá trị thập phân
+        + Trong dấu chấm động đơn sẽ cộng số mũ với 127
+        + Trong dấu chấm động kép sẽ cộng số mũ với 1023  
+    => Chuyển giá trị cuối cùng sang phần thập phân.
+    - The mantisa (Giá trị phân số): 23 hoặc 52 bit biểu diễn giá trị nhị phân của phần nguyên ghép với phần thập phân.
+
+    85.125
+    85 = 1010101
+    0.125 = 001
+    85.125 = 1010101.001
+        =1.010101001 x 2^6 
+    sign = 0 
+
+    1. Single precision:
+    biased exponent 127+6=133
+    133 = 10000101
+    Normalised mantisa = 010101001
+    we will add 0's to complete the 23 bits
+
+    The IEEE 754 Single precision is:
+    = 0 10000101 01010100100000000000000
+    This can be written in hexadecimal form 42AA4000
+
+    2. Double precision:
+    biased exponent 1023+6=1029
+    1029 = 10000000101
+    Normalised mantisa = 010101001
+    we will add 0's to complete the 52 bits
+
+* Nếu như destructuring một object B bên trong một object A thì kết quả trả ra gì và có giữ reference không?
+Destructuring object B trong một object A thì sẽ trả ra được toàn bộ object B đó và các thuộc tính bên trong
+    trường hợp destructuring ra nhỏ hơn hoặc từng thuộc tính của B thì vẫn trả ra đúng giá trị của từng thuộc tính theo đúng thứ tự.
+    - Vẫn giữ nguyên reference, một khi đã lấy giá trị thì khi thay đổi hoặc gán giá trị mới cho biến sẽ ảnh hưởng đến object gốc.
+    - Để tránh reference thì dùng object.assign để hạn chế việc bị thay đổi giá trị.
