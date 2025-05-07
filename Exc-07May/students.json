@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "grade": 9,
+    "age": 20
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "grade": 7.5,
+    "age": 22
+  },
+  {
+    "id": 3,
+    "name": "Alice Johnson",
+    "grade": 8.5,
+    "age": 19
+  },
+  {
+    "id": 4,
+    "name": "Bob Brown",
+    "grade": 6,
+    "age": 21
+  },
+  {
+    "id": 5,
+    "name": "Charlie Davis",
+    "grade": 5.5,
+    "age": 23
+  }
+]
