@@ -1,0 +1,246 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "role": "main"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "role": "core"
+  },
+  {
+    "id": 3,
+    "name": "Alice Johnson",
+    "role": "core"
+  },
+  {
+    "id": 4,
+    "name": "Bob Brown",
+    "role": "core"
+  },
+  {
+    "id": 5,
+    "name": "Charlie Davis",
+    "role": "core"
+  },
+  {
+    "id": 6,
+    "name": "David Wilson",
+    "role": "core"
+  },
+  {
+    "id": 7,
+    "name": "Eve Miller",
+    "role": "bench"
+  },
+  {
+    "id": 8,
+    "name": "Frank Garcia",
+    "role": "bench"
+  },
+  {
+    "id": 9,
+    "name": "Grace Martinez",
+    "role": "bench"
+  },
+  {
+    "id": 10,
+    "name": "Hannah Rodriguez",
+    "role": "bench"
+  },
+  {
+    "id": 11,
+    "name": "Isabella Lee",
+    "role": "bench"
+  },
+  {
+    "id": 12,
+    "name": "Jack Walker",
+    "role": "normal"
+  },
+  {
+    "id": 13,
+    "name": "Liam Hall",
+    "role": "normal"
+  },
+  {
+    "id": 14,
+    "name": "Mia Young",
+    "role": "normal"
+  },
+  {
+    "id": 15,
+    "name": "Noah Allen",
+    "role": "normal"
+  },
+  {
+    "id": 16,
+    "name": "Olivia King",
+    "role": "normal"
+  },
+  {
+    "id": 17,
+    "name": "Parker Wright",
+    "role": "normal"
+  },
+  {
+    "id": 18,
+    "name": "Quinn Scott",
+    "role": "normal"
+  },
+  {
+    "id": 19,
+    "name": "Ryan Green",
+    "role": "normal",
+    "matchingId": 2,
+    "mismatchingId": 4
+  },
+  {
+    "id": 20,
+    "name": "Sophia Adams",
+    "role": "normal",
+    "matchingId": 3,
+    "mismatchingId": 5
+  },
+  {
+    "id": 21,
+    "name": "Tessa Baker",
+    "role": "normal",
+    "matchingId": 4,
+    "mismatchingId": 0
+  },
+  {
+    "id": 22,
+    "name": "Ulysses Gonzalez",
+    "role": "normal",
+    "matchingId": 5,
+    "mismatchingId": 1
+  },
+  {
+    "id": 23,
+    "name": "Victoria Nelson",
+    "role": "normal",
+    "matchingId": 0,
+    "mismatchingId": 2
+  },
+  {
+    "id": 24,
+    "name": "William Carter",
+    "role": "normal",
+    "matchingId": 1,
+    "mismatchingId": 3
+  },
+  {
+    "id": 25,
+    "name": "Xander Mitchell",
+    "role": "normal",
+    "matchingId": 2,
+    "mismatchingId": 4
+  },
+  {
+    "id": 26,
+    "name": "Yara Perez",
+    "role": "normal",
+    "matchingId": 3,
+    "mismatchingId": 5
+  },
+  {
+    "id": 27,
+    "name": "Zoe Roberts",
+    "role": "normal",
+    "matchingId": 4,
+    "mismatchingId": 0
+  },
+  {
+    "id": 28,
+    "name": "Aaron Turner",
+    "role": "normal",
+    "matchingId": 5,
+    "mismatchingId": 1
+  },
+  {
+    "id": 29,
+    "name": "Bella Phillips",
+    "role": "normal",
+    "matchingId": 0,
+    "mismatchingId": 2
+  },
+  {
+    "id": 30,
+    "name": "Carter Campbell",
+    "role": "normal",
+    "matchingId": 1,
+    "mismatchingId": 3
+  },
+  {
+    "id": 31,
+    "name": "Dylan Parker",
+    "role": "normal",
+    "matchingId": 2,
+    "mismatchingId": 4
+  },
+  {
+    "id": 32,
+    "name": "Ella Evans",
+    "role": "normal",
+    "matchingId": 3,
+    "mismatchingId": 5
+  },
+  {
+    "id": 33,
+    "name": "Finn Edwards",
+    "role": "normal",
+    "matchingId": 4,
+    "mismatchingId": 0
+  },
+  {
+    "id": 34,
+    "name": "Grace Collins",
+    "role": "normal",
+    "matchingId": 5,
+    "mismatchingId": 1
+  },
+  {
+    "id": 35,
+    "name": "Henry Stewart",
+    "role": "normal",
+    "matchingId": 0,
+    "mismatchingId": 2
+  },
+  {
+    "id": 36,
+    "name": "Ivy Sanchez",
+    "role": "normal",
+    "matchingId": 1,
+    "mismatchingId": 3
+  },
+  {
+    "id": 37,
+    "name": "Jack Ramirez",
+    "role": "normal",
+    "matchingId": 2,
+    "mismatchingId": 4
+  },
+  {
+    "id": 38,
+    "name": "Kylie Morris",
+    "role": "normal",
+    "matchingId": 3,
+    "mismatchingId": 5
+  },
+  {
+    "id": 39,
+    "name": "Liam Rogers",
+    "role": "normal",
+    "matchingId": 4,
+    "mismatchingId": 0
+  },
+  {
+    "id": 40,
+    "name": "Mason Reed",
+    "role": "normal",
+    "matchingId": 5,
+    "mismatchingId": 1
+  }
+]

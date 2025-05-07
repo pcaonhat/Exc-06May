@@ -82,7 +82,7 @@ function loadStudentFromJSON(fileName) {
     }
     else{
         let data = fs.readFileSync(fileName);
-        studentList = JSON.parse(data);
+        let studentList = JSON.parse(data);
         return studentList;
     }
 }
@@ -94,8 +94,17 @@ const rl = readline.createInterface({ input, output });
 
 
 async function handleMenu() {
+
     let studentList = loadStudentFromJSON("students.json");
     let isRunning = true;
+
+    console.log("\n1. Add Student");
+    console.log("2. Search Student by Name");
+    console.log("3. Display Student List");
+    console.log("4. Display Statistics");
+    console.log("5. Save to JSON");
+    console.log("6. Load from JSON");
+    console.log("7. Exit");
 
     while (isRunning) {
 
@@ -140,11 +149,5 @@ async function handleMenu() {
     rl.close();
 }
 
-console.log("\n1. Add Student");
-console.log("2. Search Student by Name");
-console.log("3. Display Student List");
-console.log("4. Display Statistics");
-console.log("5. Save to JSON");
-console.log("6. Load from JSON");
-console.log("7. Exit");
+
 handleMenu();
