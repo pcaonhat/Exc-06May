@@ -23,9 +23,9 @@ function findAllCombination(memberList,matchingPairs, mismatchingPairs)
     let result = [];
     
     //Đọc toàn bộ các thành viên main, core và bench
-    let mainMembers = memberList.filter(member => member.role === 'main');
-    let coreMembers = memberList.filter(member => member.role === 'core');
-    let benchMembers = memberList.filter(member => member.role === 'bench');
+    const mainMembers = memberList.filter(member => member.role === 'main');
+    const coreMembers = memberList.filter(member => member.role === 'core');
+    const benchMembers = memberList.filter(member => member.role === 'bench');
 
     for(let i = 0; i < mainMembers.length; i++)
     {
