@@ -131,6 +131,35 @@ function deletePairFromList(pairList, firstMemberId, secondMemberId)
     }
 }
 
+function checkCombination(memberId1, memberId2, memberId3, memberList, matchingPairs, mismatchingPairs)
+{
+    const members = [memberId1, memberId2, memberId3].map(id => memberList.find(member => member.id === id));
+
+    if (members.some(member => !member)) {
+        return false; 
+    }
+
+    const roles = members.map(member => member.role);
+    const uniqueRole = new Set(roles);
+    if(!uniqueRole.has('main') || !uniqueRole.has('core') || !uniqueRole.has('bench'))
+    {
+        return false;
+    }
+
+    const mainMember = members.find(member => member.role === 'main');
+    const coreMember = members.find(member => member.role === 'core');
+    const benchMember = members.find(member => member.role === 'bench');
+
+    let newCombination = new combination(mainMember, coreMember, benchMember);
+
+    // Check if the combination is valid
+    if (isValdCombination(newCombination, matchingPairs, mismatchingPairs)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 
 let memberList = [];
 
@@ -175,7 +204,8 @@ async function handleMenu() {
     console.log("4. Delete Matching Pair");
     console.log("5. Delete Mismatching Pair");
     console.log("6. Display all possible team combinations");
-    console.log("7. Exit");
+    console.log("7. Check combination of 3 members");
+    console.log("8. Exit");
 
     while (isRunning) {
 
@@ -215,8 +245,18 @@ async function handleMenu() {
                 displayCombinationList(combinationList);
                 break;
             case '7':
-                console.log("Exiting...");
+                const memberId1 = parseInt(await rl.question('Enter first member ID: '), 10);
+                const memberId2 = parseInt(await rl.question('Enter second member ID: '), 10);
+                const memberId3 = parseInt(await rl.question('Enter third member ID: '), 10);
+                if (checkCombination(memberId1, memberId2, memberId3, memberList, matchingPairs, mismatchingPairs)) {
+                    console.log("The combination is valid.");
+                } else {
+                    console.log("The combination is not valid.");
+                }
+                break;
+            case '8':
                 isRunning = false;
+                console.log("Exiting...");
                 break;
             default:
                 console.log("Invalid choice. Please try again.");
