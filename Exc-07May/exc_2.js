@@ -163,8 +163,6 @@ function checkCombination(memberId1, memberId2, memberId3, memberList, matchingP
 }
 
 
-let memberList = [];
-
 let matchingPairs = [];
 let mismatchingPairs = [];
 
