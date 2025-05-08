@@ -135,10 +135,12 @@ function checkCombination(memberId1, memberId2, memberId3, memberList, matchingP
 {
     const members = [memberId1, memberId2, memberId3].map(id => memberList.find(member => member.id === id));
 
+    //Kiểm tra thành viên có tồn tại
     if (members.some(member => !member)) {
         return false; 
     }
 
+    //Kiểm tra đủ 3 vai trò là main, core và bench
     const roles = members.map(member => member.role);
     const uniqueRole = new Set(roles);
     if(!uniqueRole.has('main') || !uniqueRole.has('core') || !uniqueRole.has('bench'))
@@ -152,7 +154,7 @@ function checkCombination(memberId1, memberId2, memberId3, memberList, matchingP
 
     let newCombination = new combination(mainMember, coreMember, benchMember);
 
-    // Check if the combination is valid
+    // Kiểm tra valid combination
     if (isValdCombination(newCombination, matchingPairs, mismatchingPairs)) {
         return true;
     } else {
