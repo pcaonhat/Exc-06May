@@ -11,8 +11,47 @@ services:
     ports:
       - "${DB_PORT}:5432"
     volumes:
-      - ./src/db/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./server/db/init.sql:/docker-entrypoint-initdb.d/init.sql
       - pgdata:/var/lib/postgresql/data
+    networks: 
+      - app-network
+
+  backend:  # Thêm service Node.js backend
+    build:
+      context: ./server  # Đường dẫn đến thư mục chứa Dockerfile của backend
+      dockerfile: Dockerfile
+    container_name: node_backend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"  
+    environment:
+      - DB_HOST=db  
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+      - DB_PORT=5432
+    depends_on:
+      - db  
+    networks: 
+      - app-network
+
+  frontend:  
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: react_frontend
+    ports:
+      - "3001:80"  
+    environment:
+      - REACT_APP_API_URL=/api  
+    depends_on:
+      - backend
+    networks:  
+      - app-network
 volumes:
   pgdata:
     driver: local
+
+networks:
+  app-network:
+    driver: bridge
