@@ -1,0 +1,64 @@
+* Hoisting là gì?
+Hoisting là cơ chế mặc định của JavaScript để di chuyển tất cả các biến và hàm khi khai báo lên đầu scope trước khi chúng được thực thi.
+    - Đối với cơ chế này nó chỉ di chuyển khai báo, còn việc gán giá trị thì giữ nguyên.
+    - Ví dụ: với đoạn code sau
+    {
+        console.log(hoist);
+
+        var hoist = 500;
+    }
+    Thực tế chạy code với Hoisting sẽ đưa khai báo lên trên cùng của scope
+    {
+        var hoist; \\ hoist mới được khai báo nên giá trị của hoist là undefined.
+
+        console.log(hoist);
+
+        var hoist = 500;
+    }
+    - Đặc điểm 
+    + Trong Javascript thì Function declarations có thuộc tính Hoisting, còn Function expression thì không.
+    + Dùng var thì cho kết quả như trên nhưng dùng let thì sẽ không access được do biến chỉ mới được định nghĩa 
+        chứ chưa được khởi tạo
+    + Đối với 2 hàm có cùng tên trong JavaScript, hàm nào được định nghĩa cuối cùng sẽ ghi đè lên các hàm trước
+        Lý do là JavaScript coi hàm như 1 object và việc đặt cùng tên sẽ đổi reference của tên hàm đó sang định nghĩa mới
+        
+* Có thể dùng rest parameter kết hợp với default value không?
+    - Có
+    Ví dụ
+    function example(a = 1, b = 2, ...rest) 
+    {
+        console.log(a, b, rest);
+    }
+    - Luôn phải đặt rest parameter ở cuối cùng trong danh sách tham số và sau default value bởi vì cách sử dụng của chúng
+        + rest parameter luôn phải được đặt cuối cùng trong danh sách tham số
+        + default value chỉ cần phía sau không có tham số không có giá trị mặc định
+
+* Strict mode là gì?
+Strict Mode là một quy mẫu nghiêm khắc của Javascript. Nếu như coi việc viết code bình thường là Normal Mode, thì Strict Mode sẽ có thêm nhiều quy định khác so với Normal Mode. 
+    Việc đó khiến cho một thao tác vốn bình thường có thể chạy ngon lành trở nên lỗi, và throw ra errors.
+    - Cú pháp: "use strict";
+    - đặt "use strict"; ở đâu thì phạm vi strict mode sẽ tính file code hoặc hàm đó
+Các quy định của strict mode
+    - Không thể sử dụng một biến mà không khai báo
+    - Báo lỗi ở những assignments vốn không thể thực hiện
+    - Báo lỗi khi delete những thứ không thể xoá
+    - Các tham số của một hàm không được phép trùng nhau
+    - Không sử dụng được cách viết số thuộc hệ bát phân với tiền tố là 0
+    - Không thể sử dụng with
+    - Không sử dụng được biến được khai báo bên trong eval
+    - Không thể sử dụng eval và arguments như là một identifier
+    - Thay đổi cách thức hoạt động của this trong một số trường hợp
+        + this sẽ không bị ép thành object nữa.
+        + this sẽ không còn bị chuyển thành Global object (window) nếu nó là null hay undefined
+    - Hạn chế sử dụng các property caller, callee và arguments trong một số trường hợp
+    - Không thể định nghĩa function bên trong một statement hay một block
+    - Không thể sử dụng một số từ khoá được "giữ chỗ" trước cho những phiên bản ES sau này
+        implements
+        interface
+        let
+        package
+        private
+        protected
+        public
+        static
+        yield
