@@ -1,2 +1,4 @@
 #Biến môi trường 
 .env
+
+node_modules
