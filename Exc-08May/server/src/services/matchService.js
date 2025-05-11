@@ -22,7 +22,8 @@ exports.getMatchPlayerByPlayerId = async (playerId) => {
 
 exports.getMatchPlayerByMatchId = async (matchId) => {
     try {
-        const result = await pool.query('SELECT * FROM match_player WHERE match_id = $1 ORDER BY team ASC', [matchId]);
+        const result = await pool.query('SELECT match_player.*, players.name FROM match_player JOIN players ON match_player.player_id = players.id  WHERE match_id = $1 ORDER BY team ASC', [matchId]
+        );
         return result;
     } catch (error) {
         console.error('Error fetching match player by match Id:', error);

@@ -4,7 +4,7 @@
   const matchRoutes = require('./routes/matchRoutes'); 
 
   // Middleware
-  app.use(express.json()); // để đọc body dạng JSON
+  app.use(express.json()); 
 
   // Routes
   app.use('/api/players', playerRoutes); 
