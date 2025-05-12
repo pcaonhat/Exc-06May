@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "title": "The Maltese Falcon",
+    "genre": "Adventure",
+    "isAvailable": true,
+    "availableAmount": 3
+  },
+  {
+    "id": 2,
+    "title": "Bible",
+    "genre": "Adventure",
+    "isAvailable": true,
+    "availableAmount": 3
+  },
+  {
+    "id": 3,
+    "title": "My Bondage and My Freedom",
+    "genre": "Children's Literature",
+    "isAvailable": true,
+    "availableAmount": 2
+  },
+  {
+    "id": 4,
+    "title": "Scoop",
+    "genre": "Adventure",
+    "isAvailable": true,
+    "availableAmount": 9
+  },
+  {
+    "id": 5,
+    "title": "My Life",
+    "genre": "Adventure",
+    "isAvailable": true,
+    "availableAmount": 6
+  },
+  {
+    "id": 6,
+    "title": "In Cold Blood",
+    "genre": "Science Fiction",
+    "isAvailable": true,
+    "availableAmount": 1
+  },
+  {
+    "id": 7,
+    "title": "As I Lay Dying",
+    "genre": "Drama",
+    "isAvailable": true,
+    "availableAmount": 1
+  },
+  {
+    "id": 8,
+    "title": "The Big Sleep",
+    "genre": "Science Fiction",
+    "isAvailable": true,
+    "availableAmount": 9
+  },
+  {
+    "id": 9,
+    "title": "The Pursuit of Love",
+    "genre": "Historical Fiction",
+    "isAvailable": true,
+    "availableAmount": 6
+  },
+  {
+    "id": 10,
+    "title": "The Prince",
+    "genre": "Historical Fiction",
+    "isAvailable": true,
+    "availableAmount": 7
+  },
+  {
+    "id": 11,
+    "title": "Clarissa",
+    "genre": "Poetry",
+    "isAvailable": true,
+    "availableAmount": 5
+  },
+  {
+    "id": 12,
+    "title": "The Tin Drum",
+    "genre": "Detective",
+    "isAvailable": true,
+    "availableAmount": 9
+  },
+  {
+    "id": 13,
+    "title": "The Brief Wondrous Life of Oscar Wao",
+    "genre": "Comic",
+    "isAvailable": true,
+    "availableAmount": 6
+  },
+  {
+    "id": 14,
+    "title": "Gone with the Wind",
+    "genre": "Comic",
+    "isAvailable": true,
+    "availableAmount": 4
+  },
+  {
+    "id": 15,
+    "title": "Bible",
+    "genre": "Classic",
+    "isAvailable": true,
+    "availableAmount": 9
+  },
+  {
+    "id": 16,
+    "title": "The Problems of Philosophy",
+    "genre": "Western",
+    "isAvailable": true,
+    "availableAmount": 6
+  },
+  {
+    "id": 17,
+    "title": "Josefine Mutzenbacher",
+    "genre": "Western",
+    "isAvailable": true,
+    "availableAmount": 4
+  },
+  {
+    "id": 18,
+    "title": "Second Treatise of Government",
+    "genre": "Young Adult",
+    "isAvailable": true,
+    "availableAmount": 8
+  },
+  {
+    "id": 19,
+    "title": "Pride and Prejudice",
+    "genre": "Thriller",
+    "isAvailable": true,
+    "availableAmount": 9
+  },
+  {
+    "id": 20,
+    "title": "Republic",
+    "genre": "Thriller",
+    "isAvailable": true,
+    "availableAmount": 10
+  },
+  {
+    "id": 21,
+    "title": "A Handful of Dust",
+    "genre": "Children's Literature",
+    "isAvailable": true,
+    "availableAmount": 5
+  },
+  {
+    "id": 22,
+    "title": "A Room with a View",
+    "genre": "Religion",
+    "isAvailable": true,
+    "availableAmount": 9
+  },
+  {
+    "id": 23,
+    "title": "Tristram Shandy",
+    "genre": "Western",
+    "isAvailable": true,
+    "availableAmount": 1
+  },
+  {
+    "id": 24,
+    "title": "Ulysses",
+    "genre": "Young Adult",
+    "isAvailable": true,
+    "availableAmount": 3
+  },
+  {
+    "id": 25,
+    "title": "The Naked and the Dead",
+    "genre": "Classic",
+    "isAvailable": true,
+    "availableAmount": 5
+  },
+  {
+    "id": 26,
+    "title": "Dune",
+    "genre": "Thriller",
+    "isAvailable": true,
+    "availableAmount": 8
+  },
+  {
+    "id": 27,
+    "title": "The Prophet",
+    "genre": "Mystery",
+    "isAvailable": true,
+    "availableAmount": 4
+  },
+  {
+    "id": 28,
+    "title": "The Moviegoer",
+    "genre": "Mystery",
+    "isAvailable": true,
+    "availableAmount": 1
+  },
+  {
+    "id": 29,
+    "title": "Candide",
+    "genre": "Business",
+    "isAvailable": true,
+    "availableAmount": 5
+  },
+  {
+    "id": 30,
+    "title": "The Aeneid",
+    "genre": "Historical Fiction",
+    "isAvailable": true,
+    "availableAmount": 6
+  },
+  {
+    "id": 31,
+    "title": "Malone Dies",
+    "genre": "Classic",
+    "isAvailable": true,
+    "availableAmount": 2
+  },
+  {
+    "id": 32,
+    "title": "East of Eden",
+    "genre": "Poetry",
+    "isAvailable": true,
+    "availableAmount": 1
+  },
+  {
+    "id": 33,
+    "title": "The Diary of a Young Girl",
+    "genre": "Biography",
+    "isAvailable": true,
+    "availableAmount": 2
+  },
+  {
+    "id": 34,
+    "title": "The Remains of the Day",
+    "genre": "Graphic Novel",
+    "isAvailable": true,
+    "availableAmount": 4
+  },
+  {
+    "id": 35,
+    "title": "The Prince",
+    "genre": "Comic",
+    "isAvailable": true,
+    "availableAmount": 7
+  },
+  {
+    "id": 36,
+    "title": "The Remains of the Day",
+    "genre": "Psychology",
+    "isAvailable": true,
+    "availableAmount": 10
+  },
+  {
+    "id": 37,
+    "title": "The Maltese Falcon",
+    "genre": "Young Adult",
+    "isAvailable": true,
+    "availableAmount": 5
+  },
+  {
+    "id": 38,
+    "title": "The Brothers Karamazov",
+    "genre": "Graphic Novel",
+    "isAvailable": true,
+    "availableAmount": 7
+  },
+  {
+    "id": 39,
+    "title": "The Diary of a Young Girl",
+    "genre": "Young Adult",
+    "isAvailable": true,
+    "availableAmount": 6
+  },
+  {
+    "id": 40,
+    "title": "Fahrenheit 451",
+    "genre": "Mystery",
+    "isAvailable": true,
+    "availableAmount": 8
+  },
+  {
+    "id": 41,
+    "title": "Heart of Darkness",
+    "genre": "Children's Literature",
+    "isAvailable": true,
+    "availableAmount": 10
+  },
+  {
+    "id": 42,
+    "title": "Jude the Obscure",
+    "genre": "Thriller",
+    "isAvailable": true,
+    "availableAmount": 7
+  },
+  {
+    "id": 43,
+    "title": "Robinson Crusoe",
+    "genre": "Psychology",
+    "isAvailable": true,
+    "availableAmount": 7
+  },
+  {
+    "id": 44,
+    "title": "The Alchemist",
+    "genre": "Western",
+    "isAvailable": true,
+    "availableAmount": 5
+  },
+  {
+    "id": 45,
+    "title": "Atonement",
+    "genre": "Comic",
+    "isAvailable": true,
+    "availableAmount": 2
+  },
+  {
+    "id": 46,
+    "title": "Grimms' Fairy Tales",
+    "genre": "Mystery",
+    "isAvailable": true,
+    "availableAmount": 4
+  },
+  {
+    "id": 47,
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "genre": "Comic",
+    "isAvailable": true,
+    "availableAmount": 6
+  },
+  {
+    "id": 48,
+    "title": "Gulliver's Travels",
+    "genre": "Philosophy",
+    "isAvailable": true,
+    "availableAmount": 2
+  },
+  {
+    "id": 49,
+    "title": "The Corrections",
+    "genre": "Romance",
+    "isAvailable": true,
+    "availableAmount": 8
+  },
+  {
+    "id": 50,
+    "title": "All Quiet on the Western Front",
+    "genre": "Mythology",
+    "isAvailable": true,
+    "availableAmount": 6
+  },
+  {
+    "id": 51,
+    "title": "Gone with the Wind",
+    "genre": "Drama",
+    "isAvailable": true,
+    "availableAmount": 1
+  },
+  {
+    "id": 52,
+    "title": "Candide",
+    "genre": "Biography",
+    "isAvailable": true,
+    "availableAmount": 1
+  },
+  {
+    "id": 53,
+    "title": "The Heart is a Lonely Hunter",
+    "genre": "Young Adult",
+    "isAvailable": true,
+    "availableAmount": 3
+  },
+  {
+    "id": 54,
+    "title": "The Catcher in the Rye",
+    "genre": "Poetry",
+    "isAvailable": true,
+    "availableAmount": 6
+  },
+  {
+    "id": 55,
+    "title": "Scoop",
+    "genre": "Memoir",
+    "isAvailable": true,
+    "availableAmount": 3
+  },
+  {
+    "id": 56,
+    "title": "The Sun Also Rises",
+    "genre": "Young Adult",
+    "isAvailable": true,
+    "availableAmount": 8
+  },
+  {
+    "id": 57,
+    "title": "Meditations",
+    "genre": "Biography",
+    "isAvailable": true,
+    "availableAmount": 7
+  },
+  {
+    "id": 58,
+    "title": "Tinker, Tailor, Soldier, Spy",
+    "genre": "Western",
+    "isAvailable": true,
+    "availableAmount": 3
+  },
+  {
+    "id": 59,
+    "title": "The Golden Bowl",
+    "genre": "Fantasy",
+    "isAvailable": true,
+    "availableAmount": 6
+  },
+  {
+    "id": 60,
+    "title": "To Kill a Mockingbird",
+    "genre": "Graphic Novel",
+    "isAvailable": true,
+    "availableAmount": 2
+  },
+  {
+    "id": 61,
+    "title": "Beyond Good and Evil",
+    "genre": "Detective",
+    "isAvailable": true,
+    "availableAmount": 6
+  },
+  {
+    "id": 62,
+    "title": "The Call of the Wild",
+    "genre": "Mythology",
+    "isAvailable": true,
+    "availableAmount": 3
+  },
+  {
+    "id": 63,
+    "title": "Great Expectations",
+    "genre": "Biography",
+    "isAvailable": true,
+    "availableAmount": 8
+  },
+  {
+    "id": 64,
+    "title": "Crime and Punishment",
+    "genre": "Philosophy",
+    "isAvailable": true,
+    "availableAmount": 1
+  },
+  {
+    "id": 65,
+    "title": "In Cold Blood",
+    "genre": "Fantasy",
+    "isAvailable": true,
+    "availableAmount": 2
+  },
+  {
+    "id": 66,
+    "title": "The Prince",
+    "genre": "Science Fiction",
+    "isAvailable": true,
+    "availableAmount": 9
+  },
+  {
+    "id": 67,
+    "title": "The Diary of a Young Girl",
+    "genre": "Classic",
+    "isAvailable": true,
+    "availableAmount": 5
+  },
+  {
+    "id": 68,
+    "title": "Bleak House",
+    "genre": "Drama",
+    "isAvailable": true,
+    "availableAmount": 5
+  },
+  {
+    "id": 69,
+    "title": "And Then There Were None",
+    "genre": "Classic",
+    "isAvailable": true,
+    "availableAmount": 4
+  },
+  {
+    "id": 70,
+    "title": "Slaughterhouse Five",
+    "genre": "Psychology",
+    "isAvailable": true,
+    "availableAmount": 5
+  },
+  {
+    "id": 71,
+    "title": "The Golden Bowl",
+    "genre": "Comedy",
+    "isAvailable": true,
+    "availableAmount": 2
+  },
+  {
+    "id": 72,
+    "title": "Beloved",
+    "genre": "Historical Fiction",
+    "isAvailable": true,
+    "availableAmount": 8
+  },
+  {
+    "id": 73,
+    "title": "Robinson Crusoe",
+    "genre": "Thriller",
+    "isAvailable": true,
+    "availableAmount": 5
+  },
+  {
+    "id": 74,
+    "title": "Lucky Jim",
+    "genre": "Science Fiction",
+    "isAvailable": true,
+    "availableAmount": 8
+  },
+  {
+    "id": 75,
+    "title": "Tinker, Tailor, Soldier, Spy",
+    "genre": "Children's Literature",
+    "isAvailable": true,
+    "availableAmount": 7
+  },
+  {
+    "id": 76,
+    "title": "The Portrait of a Lady",
+    "genre": "Adventure",
+    "isAvailable": true,
+    "availableAmount": 9
+  },
+  {
+    "id": 77,
+    "title": "Revolutionary Road",
+    "genre": "Children's Literature",
+    "isAvailable": true,
+    "availableAmount": 2
+  },
+  {
+    "id": 78,
+    "title": "The Heart is a Lonely Hunter",
+    "genre": "Comedy",
+    "isAvailable": true,
+    "availableAmount": 9
+  },
+  {
+    "id": 79,
+    "title": "All the King's Men",
+    "genre": "Adventure",
+    "isAvailable": true,
+    "availableAmount": 6
+  },
+  {
+    "id": 80,
+    "title": "Blood Meridian",
+    "genre": "Philosophy",
+    "isAvailable": true,
+    "availableAmount": 10
+  },
+  {
+    "id": 81,
+    "title": "Charlie and the Chocolate Factory",
+    "genre": "Historical Fiction",
+    "isAvailable": true,
+    "availableAmount": 5
+  },
+  {
+    "id": 82,
+    "title": "The Trial",
+    "genre": "Horror",
+    "isAvailable": true,
+    "availableAmount": 4
+  },
+  {
+    "id": 83,
+    "title": "Beloved",
+    "genre": "Classic",
+    "isAvailable": true,
+    "availableAmount": 10
+  },
+  {
+    "id": 84,
+    "title": "The Works of Edgar Allan Poe",
+    "genre": "Fantasy",
+    "isAvailable": true,
+    "availableAmount": 9
+  },
+  {
+    "id": 85,
+    "title": "Fahrenheit 451",
+    "genre": "Children's Literature",
+    "isAvailable": true,
+    "availableAmount": 6
+  },
+  {
+    "id": 86,
+    "title": "Jude the Obscure",
+    "genre": "Adventure",
+    "isAvailable": true,
+    "availableAmount": 4
+  },
+  {
+    "id": 87,
+    "title": "Slaughterhouse Five",
+    "genre": "Graphic Novel",
+    "isAvailable": true,
+    "availableAmount": 5
+  },
+  {
+    "id": 88,
+    "title": "Dubliners",
+    "genre": "Philosophy",
+    "isAvailable": true,
+    "availableAmount": 5
+  },
+  {
+    "id": 89,
+    "title": "Revolutionary Road",
+    "genre": "Science Fiction",
+    "isAvailable": true,
+    "availableAmount": 5
+  },
+  {
+    "id": 90,
+    "title": "Are You There God? It's Me, Margaret",
+    "genre": "Adventure",
+    "isAvailable": true,
+    "availableAmount": 7
+  },
+  {
+    "id": 91,
+    "title": "The Ambassadors",
+    "genre": "Psychology",
+    "isAvailable": true,
+    "availableAmount": 4
+  },
+  {
+    "id": 92,
+    "title": "Lord of the Flies",
+    "genre": "Graphic Novel",
+    "isAvailable": true,
+    "availableAmount": 7
+  },
+  {
+    "id": 93,
+    "title": "On the Road",
+    "genre": "Graphic Novel",
+    "isAvailable": true,
+    "availableAmount": 1
+  },
+  {
+    "id": 94,
+    "title": "Grimms' Fairy Tales",
+    "genre": "Mythology",
+    "isAvailable": true,
+    "availableAmount": 6
+  },
+  {
+    "id": 95,
+    "title": "Adventures of Huckleberry Finn",
+    "genre": "Classic",
+    "isAvailable": true,
+    "availableAmount": 8
+  },
+  {
+    "id": 96,
+    "title": "The Brothers Karamazov",
+    "genre": "Business",
+    "isAvailable": true,
+    "availableAmount": 3
+  },
+  {
+    "id": 97,
+    "title": "Emma",
+    "genre": "Business",
+    "isAvailable": true,
+    "availableAmount": 10
+  },
+  {
+    "id": 98,
+    "title": "The Little Prince",
+    "genre": "Psychology",
+    "isAvailable": true,
+    "availableAmount": 8
+  },
+  {
+    "id": 99,
+    "title": "The Portrait of a Lady",
+    "genre": "Comic",
+    "isAvailable": true,
+    "availableAmount": 1
+  },
+  {
+    "id": 100,
+    "title": "East of Eden",
+    "genre": "Memoir",
+    "isAvailable": true,
+    "availableAmount": 9
+  }
+]
