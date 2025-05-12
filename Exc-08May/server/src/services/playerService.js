@@ -9,5 +9,3 @@ exports.getAllPlayers = async () => {
         throw error; 
     }
 }
-
-
