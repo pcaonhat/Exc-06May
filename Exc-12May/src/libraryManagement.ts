@@ -151,7 +151,7 @@ export class libraryManagement{
         const foundBooks = this.getBookByName(bookName);
 
         foundBooks.forEach(book => {
-            const userReceipts: Receipt[] = this.getReceiptByUserId(book.id);
+            const userReceipts: Receipt[] = this.getReceiptByBookId(book.id);
             foundReceipts.push(...userReceipts);
         });
 
