@@ -1,7 +1,7 @@
 import { libraryManagement } from './libraryManagement';
 import { handleMainMenu, handleBookMenu, handleReceiptMenu, handleUserMenu } from './handleMenus';
 import { displayMenu } from './displayMenus';
-import readline from 'readline';
+import { ReadlineManager } from './readlineManager';
 
 
 async function main() {
@@ -19,10 +19,6 @@ async function main() {
         return;
     }
 
-    const rl = readline.createInterface({
-        input: process.stdin,
-        output: process.stdout
-    });
 
     let currentMenu = 'main';
     let running = true;
@@ -30,9 +26,7 @@ async function main() {
     while (running) {
         displayMenu(currentMenu);
         
-        const answer = await new Promise<string>(resolve => {
-            rl.question('Nhập lựa chọn của bạn: ', resolve);
-        });
+        const answer = await ReadlineManager.question('Nhập lựa chọn của bạn: ');
 
         switch (currentMenu) {
             case 'main': 
@@ -51,7 +45,7 @@ async function main() {
         }
     }
 
-    rl.close();
+    ReadlineManager.close();
 }
 
 // Run the application

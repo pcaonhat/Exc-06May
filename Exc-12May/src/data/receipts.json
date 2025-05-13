@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "id": 1,
+    "userId": 101,
+    "bookId": 101,
+    "dateBorrow": "13/05",
+    "dateReturn": "17/05",
+    "isReturned": true
+  },
+  {
+    "id": 2,
+    "userId": 5,
+    "bookId": 5,
+    "dateBorrow": "21/05",
+    "dateReturn": "23/05",
+    "isReturned": false
+  }
+]

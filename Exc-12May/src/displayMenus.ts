@@ -3,7 +3,6 @@ function displayMainMenu() {
     console.log('1. Quản lý sách');
     console.log('2. Quản lý người dùng');
     console.log('3. Quản lý phiếu mượn/trả');
-    console.log('4. Thống kê');
     console.log('0. Thoát');
 }
 
@@ -30,7 +29,8 @@ function displayReceiptMenu() {
     console.log('1. Hiển thị danh sách phiếu');
     console.log('2. Tạo phiếu mượn sách');
     console.log('3. Ghi nhận trả sách');
-    console.log('4. Tìm kiếm phiếu');
+    console.log('4. Tìm kiếm phiếu theo id người mượn');
+    console.log('5. Tìm kiếm phiếu theo id sách');
     console.log('0. Quay lại');
 }
 

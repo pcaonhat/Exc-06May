@@ -1,4 +1,4 @@
-import { Book, User, Receipt } from './interfaces';
+import { Book, User, Receipt } from '../interfaces';
 const fs = require('fs');
 const { faker } = require('@faker-js/faker');
 

@@ -1,4 +1,4 @@
-import { Book, User, Receipt } from './data/interfaces';
+import { Book, User, Receipt } from './interfaces';
 
 export function formatBook(book: Book): string {
     return `[ID: ${book.id}] ${book.title} (${book.genre}) - ${book.isAvailable ? 'Có sẵn' : 'Đã mượn'} (${book.availableAmount} bản)`;

@@ -27,7 +27,15 @@
     "id": 5,
     "name": "Sarah Pouros",
     "address": "832 Leanna Walks",
-    "borrowedBooks": []
+    "borrowedBooks": [
+      {
+        "id": 5,
+        "title": "My Life",
+        "genre": "Adventure",
+        "isAvailable": true,
+        "availableAmount": 5
+      }
+    ]
   },
   {
     "id": 6,
@@ -597,6 +605,12 @@
     "id": 100,
     "name": "Steve Ernser",
     "address": "567 Raymond Drive",
+    "borrowedBooks": []
+  },
+  {
+    "id": 101,
+    "name": "Phong",
+    "address": "HCM",
     "borrowedBooks": []
   }
 ]
