@@ -31,6 +31,8 @@ function displayReceiptMenu() {
     console.log('3. Ghi nhận trả sách');
     console.log('4. Tìm kiếm phiếu theo id người mượn');
     console.log('5. Tìm kiếm phiếu theo id sách');
+    console.log('6. Tìm kiếm phiếu theo tên người mượn');
+    console.log('7. Tìm kiếm phiếu theo tên sách');
     console.log('0. Quay lại');
 }
 

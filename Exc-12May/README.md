@@ -27,7 +27,9 @@ Quản lý phiếu mượn trả sách
 - Hiển thị danh sách phiếu mượn trả sách
 - Tạo phiếu mượn sách
 - Ghi nhận trả sách
+- Tìm kiếm phiếu mượn trả sách theo tên id người dùng
+- Tìm kiếm phiếu mượn trả sách theo id sách
 - Tìm kiếm phiếu mượn trả sách theo tên người dùng
-- Tìm kiếm phiếu mượn trả sách theo tên sách.
+- Tìm kiếm phiếu mượn trả sách theo tên sách
 
 

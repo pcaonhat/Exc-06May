@@ -173,7 +173,30 @@ export async function handleReceiptMenu(choice: string, library: libraryManageme
                 console.log('Không tìm thấy phiếu nào.');
             }
             return 'receipt'
-            
+        case '6':
+            console.log('\n=== TÌM KIẾM PHIẾU THEO TÊN NGƯỜI DÙNG ===');
+            console.log ('Nhập tên người dùng cần tìm:');
+            const userNameToSearch: string = await ReadlineManager.question('> ');
+            const foundReceipstByUserName: Receipt[] = library.getReceiptByUserName(userNameToSearch);
+            if (foundReceipstByUserName.length > 0) {
+                console.log('Kết quả tìm kiếm:');
+                foundReceipstByUserName.forEach(receipt => console.log(formatReceipt(receipt)));
+            } else {
+                console.log('Không tìm thấy phiếu nào.');
+            }
+            return 'receipt'
+        case '7':
+            console.log('\n=== TÌM KIẾM PHIẾU THEO TÊN SÁCH ===');
+            console.log ('Nhập tên người dùng cần tìm:');
+            const bookNameToSearch: string = await ReadlineManager.question('> ');
+            const foundReceipstByBookName: Receipt[] = library.getReceiptByBookName(bookNameToSearch);
+            if (foundReceipstByBookName.length > 0) {
+                console.log('Kết quả tìm kiếm:');
+                foundReceipstByBookName.forEach(receipt => console.log(formatReceipt(receipt)));
+            } else {
+                console.log('Không tìm thấy phiếu nào.');
+            }
+            return 'receipt'
         case '0': return 'main';
         default:
             console.log('Lựa chọn không hợp lệ!');

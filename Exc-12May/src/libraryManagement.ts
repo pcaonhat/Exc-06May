@@ -135,6 +135,28 @@ export class libraryManagement{
         return this.receiptList.filter(receipt => receipt.bookId === bookId);
     }
     
+    public getReceiptByUserName(userName: string): Receipt[]{
+        let foundReceipts: Receipt[] = [];
+        const foundUsers = this.getUserByName(userName);
+        foundUsers.forEach(user => {
+            const userReceipts: Receipt[] = this.getReceiptByUserId(user.id);
+            foundReceipts.push(...userReceipts);
+        });
+
+        return foundReceipts;
+    }
+
+    public getReceiptByBookName(bookName: string): Receipt[]{
+        let foundReceipts: Receipt[] = [];
+        const foundBooks = this.getBookByName(bookName);
+
+        foundBooks.forEach(book => {
+            const userReceipts: Receipt[] = this.getReceiptByUserId(book.id);
+            foundReceipts.push(...userReceipts);
+        });
+
+        return foundReceipts;
+    }
 
     public getAvailableID (list: Book[] | User[]): number {
         const ids = list.map(item => item.id);
