@@ -1,3 +1,6 @@
+import { toJSON } from "../decorator/toJSONDecorator";
+
+@toJSON
 export class Project {
 
     private id: number;
@@ -8,11 +11,11 @@ export class Project {
 
     private taskIdList: number[];
 
-    public constructor (id: number, name: string, description: string){
+    public constructor (id: number, name: string, description: string, taskIdList: number[] = []){
         this.id = id;
         this.name = name;
         this.description = description;
-        this.taskIdList = []
+        this.taskIdList = taskIdList
     }
 
     public addTaskId(taskId: number) : void{
@@ -29,11 +32,11 @@ export class Project {
         if(taskIndex !== -1){
             this.taskIdList.splice(taskIndex, 1)
         } else {
-            console.log("Project này không có task này rồi");
+            console.log("Project không có task này");
         }
     }
 
-    public getId() {
+    public getId(): number {
         return this.id;
     }
 

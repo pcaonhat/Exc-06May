@@ -1,3 +1,6 @@
+import { toJSON } from "../decorator/toJSONDecorator";
+
+@toJSON
 export class Task{
     private id: number;
 
@@ -13,16 +16,15 @@ export class Task{
 
     public isFinished: boolean;
 
-    public constructor(id: number, name: string, description: string, dateCreate: string, dateDeadline: string){
+    public constructor(id: number, name: string, description: string, dateCreate: string, dateDeadline: string, isFinished: boolean = false, userIdList: number[] = []){
         this.id = id;
-        this.userIdList = []
+        this.userIdList = userIdList;
         this.description = description;
         this.name = name;
         this.dateCreate = dateCreate;
         this.dateDeadline = dateDeadline;
-        this.isFinished = false;
+        this.isFinished = isFinished;
     }
-
     public addUserId(userId: number) : void { 
         if(this.userIdList.indexOf(userId) === -1){
             this.userIdList.push(userId);

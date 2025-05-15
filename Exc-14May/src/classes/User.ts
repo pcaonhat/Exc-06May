@@ -1,3 +1,6 @@
+import { toJSON } from "../decorator/toJSONDecorator";
+
+@toJSON
 export class User{
     private id: number;
 

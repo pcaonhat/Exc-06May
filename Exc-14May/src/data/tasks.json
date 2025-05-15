@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "userIdList": [
+      2
+    ],
+    "description": "Dọn phòng khách",
+    "name": "Dọn phòng",
+    "dateCreate": "15/05",
+    "dateDeadline": "16/05",
+    "isFinished": true
+  },
+  {
+    "id": 2,
+    "userIdList": [],
+    "description": "Rửa 97 cái chén",
+    "name": "Rửa chén",
+    "dateCreate": "15/5",
+    "dateDeadline": "16/5",
+    "isFinished": false
+  }
+]

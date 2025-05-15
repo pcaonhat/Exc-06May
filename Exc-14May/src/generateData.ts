@@ -1,20 +1,19 @@
-// const fs = require('fs');
-// const { faker } = require('@faker-js/faker');
+import { User } from "./classes/User";
 
-// export function generateUsers(numUsers: number, fileName: string){
-//     const users: User[] = [];
+const fs = require('fs');
+const { faker } = require('@faker-js/faker');
 
-//     for(let i = 0; i < numUsers; i++){
-//         const user: User = {
-//             id: i + 1,
-//             name: faker.person.fullName(),
-//             address: faker.location.streetAddress(),
-//             borrowedBooks: []
-//         }
-//         users.push(user);
-//     }   
+export function generateUsers(numUsers: number, fileName: string): void{
+    const users: User[] = [];
 
-//     const jsonData = JSON.stringify(users, null, 2);
+    for(let i = 0; i < numUsers; i++){
+        const user = new User(i, faker.person.fullName(),faker.location.streetAddress())
+        users.push(user);
+    }   
 
-//     fs.writeFileSync(fileName, jsonData);
-// }
+    const jsonData = JSON.stringify(users, null, 2);
+
+    fs.writeFileSync(fileName, jsonData);
+}
+
+generateUsers(20, 'data/users.json');
