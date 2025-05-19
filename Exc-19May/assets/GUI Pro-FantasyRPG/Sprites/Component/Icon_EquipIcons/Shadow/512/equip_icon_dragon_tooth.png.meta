@@ -1,0 +1,34 @@
+{
+  "ver": "2.3.3",
+  "uuid": "d11b790a-ca67-42bd-ba95-c9c10e551b5e",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "platformSettings": {},
+  "subMetas": {
+    "equip_icon_dragon_tooth": {
+      "ver": "1.0.4",
+      "uuid": "6b2a58fb-33b1-4bb8-8082-441e1f76d947",
+      "rawTextureUuid": "d11b790a-ca67-42bd-ba95-c9c10e551b5e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -2,
+      "offsetY": -15,
+      "trimX": 62,
+      "trimY": 81,
+      "width": 384,
+      "height": 380,
+      "rawWidth": 512,
+      "rawHeight": 512,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

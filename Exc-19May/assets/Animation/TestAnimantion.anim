@@ -1,0 +1,49 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "TestAnimantion",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.9833333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            167.963,
+            348.216,
+            0
+          ],
+          "curve": [
+            0.3959158415841584,
+            0.19480198019801986,
+            0.39368811881188115,
+            0.882549504950495
+          ]
+        },
+        {
+          "frame": 0.9833333333333333,
+          "value": [
+            807.456,
+            296.57,
+            0
+          ]
+        }
+      ],
+      "angle": [
+        {
+          "frame": 0,
+          "value": 0
+        },
+        {
+          "frame": 0.9833333333333333,
+          "value": 320
+        }
+      ]
+    }
+  },
+  "events": []
+}

@@ -6,6 +6,7 @@ export class GameEngine {
     private canvas: HTMLCanvasElement;
     private context: CanvasRenderingContext2D;
     private lastTime: number;
+
     constructor(canvas: HTMLCanvasElement) {
         const context = canvas.getContext("2d");
 
@@ -26,10 +27,10 @@ export class GameEngine {
         canvas.addEventListener('click', this.handleClick.bind(this));
 
 
-        this.gameLoop();
+        requestAnimationFrame(this.gameLoop);
     }
 
-    private gameLoop(timeStamp = Date.now()){
+    private gameLoop(timeStamp: number){
 
         this.lastTime = this.lastTime || timeStamp;
 
@@ -40,7 +41,7 @@ export class GameEngine {
             component.update(this.context, deltaTime);
         });
 
-        requestAnimationFrame(() => this.gameLoop());
+        requestAnimationFrame(this.gameLoop);
     }
 
     public addComponent(component: Component) {
