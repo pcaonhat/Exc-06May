@@ -9,7 +9,7 @@ export class Sprite extends Component {
         this.image.src = imageUrl;
     }
 
-    public update(context: CanvasRenderingContext2D): void {
+    public update(context: CanvasRenderingContext2D, deltaTime: number): void {
         if (this.image.complete) {
             context.drawImage(this.image, this.x, this.y, this.width, this.height);
         }

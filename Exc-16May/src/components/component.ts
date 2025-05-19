@@ -11,10 +11,11 @@ export abstract class Component {
         this.height = height;
     }
 
-    public abstract update(context: CanvasRenderingContext2D):void;
+    public abstract update(context: CanvasRenderingContext2D, deltaTime: number ):void;
 
     public containsPoint(x: number, y: number): boolean {
-        return x >= this.x && x <= this.x + this.width &&
-               y >= this.y && y <= this.y + this.height;
+        const isXValid = x >= this.x && x <= this.x + this.width;
+        const isYValid = y >= this.y && y <= this.y + this.height;
+        return isXValid && isYValid;
     }
 }

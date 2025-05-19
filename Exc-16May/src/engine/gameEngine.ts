@@ -5,7 +5,7 @@ export class GameEngine {
     private components: Component[] = [];
     private canvas: HTMLCanvasElement;
     private context: CanvasRenderingContext2D;
-
+    private lastTime: number;
     constructor(canvas: HTMLCanvasElement) {
         const context = canvas.getContext("2d");
 
@@ -17,7 +17,7 @@ export class GameEngine {
         this.context = context;
         this.canvas.width = window.innerWidth;
         this.canvas.height = window.innerHeight;
-
+        this.lastTime = 0;
         window.addEventListener("resize", () => {
             this.canvas.width = window.innerWidth;
             this.canvas.height = window.innerHeight;
@@ -25,17 +25,22 @@ export class GameEngine {
 
         canvas.addEventListener('click', this.handleClick.bind(this));
 
+
         this.gameLoop();
     }
 
-    private gameLoop(){
-        requestAnimationFrame(() => this.gameLoop());
+    private gameLoop(timeStamp = Date.now()){
 
+        this.lastTime = this.lastTime || timeStamp;
+
+        let deltaTime = timeStamp - this.lastTime;
         this.context.clearRect(0, 0, this.context.canvas.width, this.context.canvas.height);
         
         this.components.forEach(component => {
-            component.update(this.context);
+            component.update(this.context, deltaTime);
         });
+
+        requestAnimationFrame(() => this.gameLoop());
     }
 
     public addComponent(component: Component) {

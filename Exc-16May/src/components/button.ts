@@ -14,7 +14,7 @@ export class Button extends Component {
         this.onClick = onClick;
     }
 
-    public update(context: CanvasRenderingContext2D): void {
+    public update(context: CanvasRenderingContext2D, deltaTime: number): void {
         context.fillStyle = this.backgroundColor;
         context.fillRect(this.x, this.y, this.width, this.height);
 
