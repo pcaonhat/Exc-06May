@@ -7,8 +7,9 @@ export class Button extends Component {
     public onClick: () => void;
 
 
-    public constructor(x: number, y: number, width: number, 
-        height: number, label: string = "", onClick: () => void = () => {}) {
+    public constructor(x: number = 0, y: number = 0, 
+        width: number = 100, height: number = 100, 
+        label: string = "", onClick: () => void = () => {}) {
         super(x, y, width, height);
         this.label = label;
         this.onClick = onClick;

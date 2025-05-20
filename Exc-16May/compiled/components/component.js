@@ -6,7 +6,8 @@ export class Component {
         this.height = height;
     }
     containsPoint(x, y) {
-        return x >= this.x && x <= this.x + this.width &&
-            y >= this.y && y <= this.y + this.height;
+        const isXValid = x >= this.x && x <= this.x + this.width;
+        const isYValid = y >= this.y && y <= this.y + this.height;
+        return isXValid && isYValid;
     }
 }

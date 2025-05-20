@@ -3,7 +3,9 @@ import { Component } from "./component.js";
 export class Sprite extends Component {
     private image: HTMLImageElement;
 
-    public constructor(imageUrl: string, x: number, y: number, width: number, height: number) {
+    public constructor(imageUrl: string = "", 
+        x: number = 0, y: number = 0, 
+        width: number = 100, height: number = 100) {
         super(x, y, width, height);
         this.image = new Image();
         this.image.src = imageUrl;

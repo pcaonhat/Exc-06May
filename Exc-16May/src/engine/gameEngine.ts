@@ -1,11 +1,12 @@
 import { Button } from "../components/button.js";
 import { Component } from "../components/component.js";
+import { Sprite } from "../components/sprite.js";
 
 export class GameEngine {
     private components: Component[] = [];
     private canvas: HTMLCanvasElement;
     private context: CanvasRenderingContext2D;
-    private lastTime: number;
+    private lastTime: number = 0;
 
     constructor(canvas: HTMLCanvasElement) {
         const context = canvas.getContext("2d");
@@ -26,7 +27,8 @@ export class GameEngine {
 
         canvas.addEventListener('click', this.handleClick.bind(this));
 
-
+        this.gameLoop = this.gameLoop.bind(this);
+        
         requestAnimationFrame(this.gameLoop);
     }
 
@@ -44,6 +46,13 @@ export class GameEngine {
         requestAnimationFrame(this.gameLoop);
     }
 
+    public getComponents(): Component[] {
+        return this.components;
+    }
+
+    public getCanvas(): HTMLCanvasElement {
+        return this.canvas;
+    }
     public addComponent(component: Component) {
         this.components.push(component);
     }
@@ -61,5 +70,17 @@ export class GameEngine {
                 }
             }
         });
+    }
+
+    private createButton(): Button {
+        const button = new Button();
+        this.addComponent(button);
+        return button;
+    }
+
+    private createSprite(): Sprite {
+        const sprite = new Sprite();
+        this.addComponent(sprite);
+        return sprite;
     }
 }
