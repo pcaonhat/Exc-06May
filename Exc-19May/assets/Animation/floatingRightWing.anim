@@ -1,0 +1,33 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "floatingRightWing",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 22,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            53.902,
+            77.005,
+            0
+          ]
+        },
+        {
+          "frame": 2,
+          "value": [
+            47.865,
+            77.005,
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "events": []
+}
